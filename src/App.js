@@ -5,6 +5,12 @@ import PetDetailsNotFound from './pages/petDetailsNotFound';
 import Root from './components/root';
 
 // Add react-router-dom imports
+import { 
+  createBrowserRouter
+  ,createRoutesFromElements
+  ,Route
+  ,RouterProvider 
+} from 'react-router-dom';
 
 // create router with JSX Route elements
 const appRouter = "REPLACE ME";
@@ -12,7 +18,7 @@ const appRouter = "REPLACE ME";
 function App() {
   return (
     // replace below with a Router Provider
-    <p>REPLACE ME</p>
+    <RouterProvider router={ appRouter }/>
   );
 }
 
